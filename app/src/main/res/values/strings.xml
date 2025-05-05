@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Student Manager</string>
+    <string name="menu_add">Thêm SV</string>
+    <string name="menu_update">Cập nhật</string>
+    <string name="menu_delete">Xóa</string>
+    <string name="menu_call">Gọi điện</string>
+    <string name="menu_email">Gửi email</string>
+    <string name="confirm_delete_title">Xác nhận</string>
+    <string name="confirm_delete_msg">Bạn có chắc chắn muốn xóa sinh viên này?</string>
+    <string name="hint_name">Họ tên</string>
+    <string name="hint_id">MSSV</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">SĐT</string>
+    <string name="btn_save">Lưu</string>
+    <string name="title_add">Thêm sinh viên</string>
+    <string name="title_update">Cập nhật sinh viên</string>
+</resources>
