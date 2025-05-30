@@ -42,11 +42,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // khoi tao db va nap du luu vao db
+        StudentRepository.init(this)
+
+
         val recyclerView : RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         // 1. Thêm dữ liệu mẫu
-        StudentRepository.add(Student("Nguyễn Văn A", "123456", "a@gmail.com", "0901234567"))
+        if (StudentRepository.students.isEmpty()) {
+            listOf(
+                Student("Nguyễn Văn B", "654321", "b@gmail.com", "0908765432"),
+                Student("Trần Thị C", "111222", "c@gmail.com", "0909998888"),
+                Student("Lê Văn D",   "333444", "d@gmail.com", "0912345678")
+            ).forEach { StudentRepository.add(it) }
+        }
 
         // 2. Khởi tạo adapter sau khi đã có dữ liệu
         adapter = StudentAdapter(

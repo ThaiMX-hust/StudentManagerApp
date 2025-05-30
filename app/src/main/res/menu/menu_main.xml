@@ -6,5 +6,7 @@
         android:id="@+id/action_add"
         android:title="Thêm"
         android:icon="@drawable/ic_input_add"
+        app:iconTint="@color/plus_blue"
         app:showAsAction="always" />
+
 </menu>
